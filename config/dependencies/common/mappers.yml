@@ -1,0 +1,38 @@
+services:
+
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+
+    Model\Mapper\AdminMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\AdminMapper'
+
+    Model\Mapper\TagMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+        - 'Model\Mapper\TagMapper'
+
+    Model\Mapper\SupplementMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+        - 'Model\Mapper\SupplementMapper'
+
+    Model\Mapper\ProductMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+        - 'Model\Mapper\ProductMapper'
+
+    Model\Mapper\StatisticMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+        - 'Model\Mapper\StatisticMapper'
+
+    Model\Mapper\MonologMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+        - 'Model\Mapper\MonologMapper'
+

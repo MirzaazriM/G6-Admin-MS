@@ -1,0 +1,63 @@
+# home
+root:
+    path: /
+    defaults:
+        resource: "landing"
+    methods: [GET, POST]
+    
+admin:
+    path: /{resource}{slash}{action}
+    requirements:
+        resource: "admin"
+        slash: "[/]{0,1}"
+    methods: [GET,POST,DELETE,PUT]
+
+tags:
+    path: /{resource}{slash}{action}
+    requirements:
+        resource: "tags"
+        slash: "[/]{0,1}"
+    methods: [GET,POST,DELETE,PUT]
+
+supplements:
+    path: /{resource}{slash}
+    requirements:
+        resource: "supplements"
+        slash: "[/]{0,1}"
+    methods: [GET,POST,DELETE,PUT]
+
+supplements-action:
+    path: /{resource}{slash}{action}
+    requirements:
+        resource: "supplements"
+        slash: "[/]{0,1}"
+    methods: [GET,POST,DELETE,PUT]
+
+products:
+    path: /{resource}{slash}
+    requirements:
+        resource: "products"
+        slash: "[/]{0,1}"
+    methods: [GET,POST,DELETE,PUT]
+
+products-action:
+    path: /{resource}{slash}{action}
+    requirements:
+        resource: "products"
+        slash: "[/]{0,1}"
+    methods: [GET,POST,DELETE,PUT]
+
+statistics:
+    path: /{resource}{slash}{action}
+    requirements:
+        resource: "statistics"
+        slash: "[/]{0,1}"
+    methods: [GET,POST,DELETE,PUT]
+
+monolog:
+    path: /{resource}{slash}{action}
+    requirements:
+        resource: "monolog"
+        slash: "[/]{0,1}"
+    methods: [GET,DELETE]
+

@@ -1,0 +1,10 @@
+parameters:
+
+        database.dsn: 'mysql:host=localhost;dbname=G6'
+        
+        config:
+            mobile_url: 'g6-mobile:8888'
+            tags_url: 'g6-tags:8888'
+            supplements_url: 'g6-supplements:8888'
+            products_url: 'g6-products:8888'
+            system_url: 'g6-system:8888'
